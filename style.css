@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@600&display=swap');
+*{
+box-sizing: border-box;
+font-family: "Prompt", sans-serif;
+}
+body
+{
+    margin: 0;
+    background-image: url('https://img2.pic.in.th/pic/fgcfdghftc8ece04baf793db9.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    margin: 0;
+    height: 100vh;
+    padding: 0;
+}
+@media screen and (max-width : 360px) {
+    image{
+        width: 1000%;
+        height: auto;
+    }
+}
+header
+{
+
+    margin: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+
+}
+nav
+{
+    position: relative;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: #002060;
+}
+nav ul
+{
+    margin: 0;
+    display: flex;
+}
+nav ul li
+{
+    list-style: none;
+}
+nav ul li a
+{
+    font-size: 20px;
+    font-weight: 600;
+    height: 60px;
+    line-height: 60px;
+    padding: 0px 10px;
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+}
+nav ul li a:hover
+{
+    background: #686868;
+    color: #ffffff;
+    transition: all .3s;
+}
+.logo
+{
+    padding: 0px 10px;
+    line-height: 60px;
+
+}
+.toggle
+{
+    position: absolute;
+    top: 0;
+    right: 20px;
+    color: black;
+    line-height: 60px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+@media screen and (max-width: 960px)
+{
+    header nav{display: block;}
+    header nav ul{display: block;}
+    .toggle{display: block;}
+    .toggle::before
+    {
+        content: '\f0c9';
+        font-family: fontAwesome;
+        line-height: 90px;
+        color: #ffffff;
+    }   
+    .toggle.active::before
+    {
+        content: '\f00d';
+        color: #ffffff;
+
+    }
+    header nav ul 
+    {
+        position: absolute;
+        width: 300px;
+        height: 100vh;
+        background: #002060;
+        top: 60px;
+        left: -100%;
+        transition: .8s;
+        z-index: 0;
+        padding: 0;
+    }
+    header nav ul.active
+    {
+        left: 0;
+        transition: .4s;
+    }
+    header nav ul li a
+    {
+        padding-left: 40px;
+    }
+}
+
+  
+  
